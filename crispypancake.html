@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vietnamese Cuisien</title>
+    <link rel="stylesheet" href="css/crispypancake.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+    $(function(){
+      $(".magni-glass").on("click", function(){  //click magni-class button, form appears
+        $("form").toggleClass("expand");
+      });
+      $(".menu").on("click", function(){        //click menu button, nav appears
+        $("nav ul").toggleClass("expand");
+      });
+      $(".drop").on("click", function(){
+        $("dropdown-content").toggleClass("expand");
+      });
+    });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="whitetop">
+        <h1 class="tinytitle"> <span class="seedling"><i class="fas fa-seedling"></i> Vietnamese </span><br> Southern Cuisine</h1>
+        <h1 class="subtitle">Crispy Pancakes</h1>
+      </div>
+
+        <button class="magni-glass" aria-label="Search"><i class="fas fa-search" ></i></button>
+        <form action="http://webdevbasics.net/scripts/demo.php" method="post">
+          <label for="search">Search</label>
+          <input type="text" name="searching" id="search" placeholder="search">
+          <button type="submit" name="searching">Search</button>
+        </form>
+    </header>
+
+    <nav>
+      <button class="menu" aria-label="menu"><i class="fas fa-bars"></i></button>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="source.html">Source</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="drop">Articles
+          <div class="dropdown-content">
+            <a href="#">Crispy pancake</a>
+            <a href="springroll.html">Spring roll</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="intro clearfix">
+        <h2>Introduction</h2> <!--wiki Banh xeo-->
+        <figure>
+          <img src="picture/cpintro.jpg" alt="cpintro" >
+          <figcaption>
+            <i>Banh xeo in Mekong Delta style</i>
+          </figcaption>
+        </figure>
+        <p>In Vietnam, crispy pancake is also called <b>"Bánh xèo"</b>, literally <b>"sizzling pancake"</b>, named for the loud sizzling sound it makes when the rice batter is poured into the hot skillet is a Vietnamese savory fried pancake made of rice flour, water, and turmeric powder.Some common stuffings include: pork, shrimp, diced green onion, mung bean, and bean sprouts. </p>
+        <p>In Southern Vietnam, banh xeo is in ther size of a large dish and it has a yellow outer layer.</p>
+        <p>Banh xeo is served with lettuce, mint, Thai basil, and fish mint. Most impotantly, Banh xeo can not be served without nuoc cham</p>
+      </section>
+
+      <section class="sauce clearfix"> <!--Nhien-->
+        <h2>Nuoc cham: Vietnamese dipping sauce</h2>
+        <figure>
+          <img src="picture/sauce.jpg" alt="cpsauce" >
+          <figcaption>
+            <i>Banh xeo is always serverd with a small bowl of nuoc cham</i>
+          </figcaption>
+        </figure>
+        <p>It is essential to eat Banh xeo with a special dipping sauce, <b>nuoc cham</b>. Due to nuoc cham, all the flavors and textures are really ties together. nuoc cham is actually made by combining fish-sauce with some other ingredients to create the beautiful balance between sour, sweet, and salty.  </p>
+      </section>
+
+      <section class="eat clearfix">
+        <h2>How to eat Banh xeo</h2>
+        <p>Firstly, take some lettuce, then take a moderate piece of Banh xeo and place it on the lettuce. After that, roll them tightly, dip the roll into the sauce and enjoy.</p>
+      </section>
+
+    </main>
+  </body>
+
+</html>

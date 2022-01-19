@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vietnamese Cuisien</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+    $(function(){
+      $(".magni-glass").on("click", function(){  //click magni-class button, form appears
+        $("form").toggleClass("expand");
+      });
+      $(".menu").on("click", function(){        //click menu button, nav appears
+        $("nav ul").toggleClass("expand");
+      });
+      $(".drop").on("click", function(){
+        $("dropdown-content").toggleClass("expand");
+      });
+    });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="whitetop">
+        <h1 class="tinytitle"> <span class="seedling"><i class="fas fa-seedling"></i> Vietnamese </span><br> Southern Cuisine</h1>
+        <h1 class="subtitle">Contact</h1>
+      </div>
+
+        <button class="magni-glass" aria-label="Search"><i class="fas fa-search" ></i></button>
+        <form action="http://webdevbasics.net/scripts/demo.php" method="post">
+          <label for="search">Search</label>
+          <input type="text" name="searching" id="search" placeholder="search">
+          <button type="submit" name="searching">Search</button>
+        </form>
+    </header>
+
+    <nav>
+      <button class="menu" aria-label="menu"><i class="fas fa-bars"></i></button>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="source.html">Source</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="drop">Articles
+          <div class="dropdown-content">
+            <a href="crispypancake.html">Crispy pancake</a>
+            <a href="springroll.html">Spring roll</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <main class="clearfix">
+      <div class="intro">
+        <p>If you have question or need any further information, please feel free to contact me:  </p>
+      </div>
+
+      <form action="http://webdevbasics.net/scripts/demo.php" method="post">
+        <div class="contactform">
+          <label for="name">Name</label><br>
+          <input type="text" name="name" id="name"><br>
+          <label for="email">Email</label><br>
+          <input type="text" name="email" id="email"><br>
+          <label for="msg">Message</label><br>
+          <input type="text" name="message" class="message" id="msg"><br>
+          <button type="submit" name="submitbtn">Send</button>
+        </div>
+      </form>
+
+      <div class="scmedia">
+        <ul>
+          <li><a  aria-label="email" a href="mailto:alice.p5498@gmail.com"><i class="fas fa-envelope fa-2x" aria-hidden="true"></i></a></li>
+          <li><a aria-label="facebook" href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i></a></li><!--I do not link directly to my personal homepage-->
+          <li><a aria-label="instagram" href="https://www.instagram.com/?hl=vi"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a></li><!--I do not link directly to my personal homepage-->
+        </ul>
+      </div>
+    </main>
+  </body>
+
+</html>

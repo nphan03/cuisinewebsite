@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vietnamese Cuisien</title>
+    <link rel="stylesheet" href="css/springroll.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+    $(function(){
+      $(".magni-glass").on("click", function(){  //click magni-class button, form appears
+        $("form").toggleClass("expand");
+      });
+      $(".menu").on("click", function(){        //click menu button, nav appears
+        $("nav ul").toggleClass("expand");
+      });
+      $(".drop").on("click", function(){
+        $("dropdown-content").toggleClass("expand");
+      });
+    });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="whitetop">
+        <h1 class="tinytitle"> <span class="seedling"><i class="fas fa-seedling"></i> Vietnamese </span><br> Southern Cuisine</h1>
+        <h1 class="subtitle">Spring rolls</h1>
+      </div>
+
+        <button class="magni-glass" aria-label="Search"><i class="fas fa-search" ></i></button>
+        <form action="http://webdevbasics.net/scripts/demo.php" method="post">
+          <label for="search">Search</label>
+          <input type="text" name="searching" id="search" placeholder="search">
+          <button type="submit" name="searching">Search</button>
+        </form>
+    </header>
+
+    <nav>
+      <button class="menu" aria-label="menu"><i class="fas fa-bars"></i></button>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="source.html">Source</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="drop">Articles
+          <div class="dropdown-content">
+            <a href="crispypancake.html">Crispy pancake</a>
+            <a href="#">Spring roll</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <main> <!--wiki-->
+      <div class="intro clearfix">
+        <h2>Introduction</h2>
+
+			<!-- cut-->
+      <figure>
+        <img src="picture/toeat.jpg" alt="intro" >
+        <figcaption>
+          <i>Goi cuon wrapped in Vietnamese banh trang</i>
+        </figcaption>
+      </figure>
+        <p>Goi cuon, Vietnamese spring roll or cold roll, is a Vietnamese dish traditionally consisting of pork, prawn, vegetables, bun (rice vermicelli), and other ingredients wrapped in Vietnamese banh trang (commonly known as rice paper or cold roll).</p>
+        <p> Like other spring roll dishes, they are believed to have an origin in China and were introduced to Vietnam by Chinese immigrants although the goi cuon has been modified to suit local tastes.</p>
+      </div>
+
+      <section class="sauce clearfix">
+        <h2>Vietnamese dipping sauce </h2>
+        <figure>
+          <img src="picture/sauce.jpg" alt="sauce" >
+          <figcaption>
+            <i> Goi cuon with accompaniments: dipping sauce and fresh chili.</i>
+          </figcaption>
+        </figure>
+        <p>Goi cuon can be served with tuong xao (also known as hoisin sauce), which consists of ground tuong and mixed coconut water (or broth), before being stir-fried with garlic and some sugar and then sprinkled with chili powder and ground peanuts.</p>
+        <p> Alternatively, goi cuon can be served with peanut sauce or other Vietnamese dipping sauces, such as nuoc cham, a condiment based on fish sauce.</p>
+      </section>
+
+      <section class="eat clearfix">
+        <h2>How to eat goi cuon</h2>
+        <p>The banh trang (rice paper) is dipped in water, then laid flat on a plate with the desired amount of ingredients is placed on top. The fresh goi cuon is then rolled up and ready to be eaten.</p>
+        <p>Traditionally, goi cuon are eaten with a large group of people at a home setting.</p>
+      </section>
+
+    </main>
+  </body>
+
+</html>
